@@ -12,3 +12,11 @@ router rip
  no auto-summary
 ```
 
+
+
+# Abridging the routes 
+In order to reduce the number of routes, we can condense them on the interfaces as such : 
+```
+interface fastEthernet 0/0
+ip summary-address eigrp 90 10.1.0.0 255.255.252.0
+```
